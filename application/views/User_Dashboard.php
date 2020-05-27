@@ -62,39 +62,47 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 				<div class="page-content">
          
-                    <div class="span6">
+                   
                     	
                     <div class="row-fluid">
+                    <div class="span8">
+                        
+                    <div class="row-fluid">
                         <div class="alert alert-block blue ">                           
-						<center>
-	
+                        <center>
+    
                             <i class="icon-user"> </i>
                             <strong>
                                 <?=$customer_name;?>
                                 
                             </strong> 
-						</center>
+                        </center>
                         </div>
                                           
                     </div>
+                     
                     <?php if(isset($gn_division)){ ?>
                         <div class="row-fluid">
                         <div class="alert alert-block blue ">                           
-						<center>
-	
+                        <center>
+    
                             <i class="icon-user"> </i>
                             <strong>
                                 <?=$gn_division;?>
                                 
                             </strong> 
-						</center>
+                        </center>
                         </div>
                                           
                     </div>
                 <?php } ?>
+            </div>
+
+        </div>
+    </div>
                 <div class="span6" style="text-align: left;"> 
                 	 <div class="row-fluid">
-                	 	<span class="span6" style="text-align: center;">Total Hourse</span>
+                	 	<span class="span6" style="text-align: center;">Total Houses</span>
                 	 	<span class="span6" style="text-align: center;"> : XXX</span>
                 	 </div>
                 	 <div class="row-fluid">
@@ -128,7 +136,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </span>
                 	 </div>
 
-                    </div> 
                     </div> 
                     <span class="span6"></span> 
 

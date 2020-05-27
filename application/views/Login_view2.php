@@ -64,7 +64,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="widget-box">
                                     <div class="widget-header">
                                         <h3>
-                                            <span class="blue">CRP</span>
+                                            <span class="blue">Electoral </span>
                                             <span class="blue">System Login</span>
                                         </h3> 
                                     </div>

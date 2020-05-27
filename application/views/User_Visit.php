@@ -120,9 +120,19 @@ max-height: 90px !important;
                                 <div class="controls">
                                     <select  class="chzn-select" id="house_no" name="house_no" 
                                     data-placeholder="">
-                                        <option value="" data-total_votes=""/>                                        
+                                        <option value="" 
+                                        data-total_votes=""
+                                        data-confirm_votes=""
+                                        data-potential_votes=""
+
+                                        />                                        
                                         <?php foreach($house_list as $ds){ ?>
-                                        <option value="<?=$ds->house_id; ?>" data-total_votes="<?=$ds->total_votes; ?>"/>
+                                        <option value="<?=$ds->house_id; ?>" 
+                                            data-total_votes="<?=$ds->total_votes; ?>"
+                                            data-confirm_votes="<?=$ds->confirm_votes; ?>"
+                                            data-potential_votes="<?=$ds->potential_votes; ?>"
+
+                                            />
                                         <?=$ds->house_number;  } ?>
                                     </select>
                                      <?php echo form_error('branch'); ?>
@@ -346,14 +356,17 @@ max-height: 90px !important;
 
                 $('#house_no').on('change',function(){
                  var total_votes= $('#house_no option:selected').data('total_votes'); 
+                 var confirm_votes= $('#house_no option:selected').data('confirm_votes'); 
+                 var potential_votes= $('#house_no option:selected').data('potential_votes'); 
                  $('#total_votes').val(total_votes);
+                 $('#confirm_votes').val(confirm_votes);
+                 $('#potential_votes').val(potential_votes);
                 });
 
               
             });
 
             function sumbit_visit_form(){
-                    alert("in");
                     var house_no              = $('#house_no').val();  
                     var potential_votes              = $('#potential_votes').val();  
                     var confirm_votes                = $('#confirm_votes').val();  
